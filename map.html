@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Sky Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bortle.html">The Bortle Scale</a></li>
+            <li><a href="map.html">Dark Sky Finder</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Find Your Nearest Dark Sky</h1>
+        <p>Use the interactive map below to explore the light pollution levels in your neighborhood. <strong>Look for areas colored green, blue, or black.</strong> These represent Bortle Class 4 or lower, where the true night sky begins to reveal itself.</p>
+
+        <div class="map-container">
+            <!-- This iframe creates the interactive map with zero JavaScript on your end -->
+            <iframe src="https://www.lightpollutionmap.info/#zoom=5&lat=22.5&lon=82.5&layers=B0TFFFFFFFFFFFFFFFFFF" title="Interactive Light Pollution Map"></iframe>
+        </div>
+        
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: #94a3b8;">
+            <em>Map data provided by LightPollutionMap.info. Red/White areas are Bortle 8-9. Blue/Black areas are Bortle 1-3.</em>
+        </p>
+    </div>
+
+</body>
+</html>

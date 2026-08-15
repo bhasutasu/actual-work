@@ -1,0 +1,92 @@
+/* --- GLOBAL STYLES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0f19; /* Deep night sky blue */
+    color: #e0e6ed;
+    line-height: 1.6;
+}
+
+/* --- NAVIGATION BAR --- */
+nav {
+    background-color: #04070d;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #3b82f6; /* Glowing blue border */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3b82f6; /* Changes to blue when hovered */
+}
+
+/* --- MAIN CONTENT & CONTAINERS --- */
+.container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+h1, h2 {
+    color: #60a5fa;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* --- BORTLE SCALE CARDS (Grid Layout) --- */
+.bortle-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #1e293b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    flex: 1 1 300px; /* Makes the cards responsive */
+    border-left: 5px solid #3b82f6;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+/* --- MAP CONTAINER --- */
+.map-container {
+    width: 100%;
+    height: 600px;
+    border: 3px solid #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
